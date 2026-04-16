@@ -22,13 +22,11 @@ void main() {
     System.out.println("Ivan's ID after save: " + ivan.getId());
     System.out.println("Homework ID: " + hw.getId());
 
-
     System.out.println("Here is the student found by id: " + studentDao.findById(ivan.getId()).toString());
     System.out.println("Here are all the students: " + studentDao.findAll().toString());
 
     ivan.setLastName("Smith");
     studentDao.update(ivan);
-
 
     Student ivanFoundById = studentDao.findByEmail("ivanpertov89@mail.com");
     System.out.println(ivanFoundById.toString());

@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a669ec8-a67b-477f-af67-a4d2110ef44d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/maven/hw30/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/hw30/src/main/java/GenericDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/hw30/src/main/java/StudentDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/hw30/src/main/java/entities/Homework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/hw30/src/main/java/entities/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/hw30/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/hw31/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/hw31/src/main/java/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/hw31/src/main/java/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/hw31/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/hw31/src/test/java/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d86ffdcb-d5a0-40aa-b878-62c9b53c1274.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d86ffdcb-d5a0-40aa-b878-62c9b53c1274.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/hw30/hw30.iml" beforeDir="false" afterPath="$PROJECT_DIR$/maven/hw30/hw30.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/hw30/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven/hw30/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,39 +52,50 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Michael/Documents/GitHub/hibernate-practice&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.LibraryTest.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Michael/Documents/GitHub/hibernate-practice",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Michael\Documents\GitHub\hibernate-practice\maven\hw30\src\main\resources\META-INF" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-cffe25b9f5b3-intellij.indexing.shared.core-IU-253.28294.334" />
-        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-IU-253.28294.334" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
       </set>
     </attachedChunks>
   </component>
@@ -91,7 +109,11 @@
       <workItem from="1776021687048" duration="601000" />
       <workItem from="1776022328116" duration="47000" />
       <workItem from="1776022393807" duration="7269000" />
-      <workItem from="1776080016082" duration="14123000" />
+      <workItem from="1776080016082" duration="14155000" />
+      <workItem from="1776266910614" duration="155000" />
+      <workItem from="1776267266536" duration="374000" />
+      <workItem from="1776269487358" duration="184000" />
+      <workItem from="1776356706868" duration="4334000" />
     </task>
     <servers />
   </component>
