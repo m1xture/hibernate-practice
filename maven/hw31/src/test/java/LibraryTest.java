@@ -31,6 +31,13 @@ public class LibraryTest {
 
     @Test
     @Tag("library")
+    @Description("adding null to library")
+    public void testAddNullBook() {
+        assertThrows(IllegalArgumentException.class, () -> lib.addBook(null));
+    }
+
+    @Test
+    @Tag("library")
     @Description("getting all books")
     public void testGetBooks() {
         Book book = new Book("some-title-here", "some-author-here");
@@ -76,6 +83,13 @@ public class LibraryTest {
         boolean result = lib.removeBook(book);
         assertTrue(result);
         assertEquals(new ArrayList<Book>(), lib.getBooks());
+    }
+
+    @Test
+    @Tag("library")
+    @Description("removing null from the lib")
+    public void testRemoveNullBook() {
+        assertThrows(IllegalArgumentException.class, () -> lib.removeBook(null));
     }
 
     @Test

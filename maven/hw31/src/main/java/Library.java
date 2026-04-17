@@ -6,10 +6,16 @@ public class Library {
     List<Book> books = new ArrayList<Book>();
 
     public void addBook(Book book) {
+        if (book == null) {
+            throw new IllegalArgumentException("Book cannot be null");
+        }
         books.add(book);
     }
 
     public boolean removeBook(Book book) {
+        if (book == null) {
+            throw new IllegalArgumentException("Book cannot be null");
+        }
         return books.remove(book);
     }
 
