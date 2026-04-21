@@ -12,6 +12,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hw31" />
         <module name="hw30" />
+        <module name="hw32" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
