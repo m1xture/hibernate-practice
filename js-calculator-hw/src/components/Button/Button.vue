@@ -1,36 +1,43 @@
 <script setup lang="ts">
-import ButtonStyleEnum from './ButtonStyleEnum'
+import { useCalcStore } from '@/stores/calcStore'
 
 interface Props {
   content: string
-  callback: () => void
-  btnStyle: ButtonStyleEnum
+  callback: Function
 }
 
 const props = defineProps<Props>()
+const calc = useCalcStore()
 </script>
 <template>
-  <button type="button" @click="$props.callback()" :class="['btn', props.btnStyle]">
+  <button
+    type="button"
+    @click="$props.callback()"
+    :class="{ btn: true, active: content === calc.operation, accent: content === '=' || content === 'AC' }"
+  >
     {{ $props.content }}
   </button>
 </template>
-<style>
+<style scoped>
 .btn {
-  /* aspect-ratio: 1/1; */
   width: 48px;
   height: 48px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffffa8;
+  background: #ffffffa8;
+  outline: none;
   font-weight: 500;
 }
-.btn--accent {
+.btn.accent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn.active,
+.btn.accent {
   background: linear-gradient(120deg, rgb(251, 251, 255) 0%, rgb(215, 223, 252) 100%);
   outline: 3px solid #fff;
-}
-.btn--secondary {
-  background-color: #ffffff76;
 }
 </style>

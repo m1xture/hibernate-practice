@@ -1,7 +1,8 @@
 <script setup lang="ts">
 interface Props {
-  value: number
-  setValue: (n: number) => void
+  num: number | null
+  onChange?: (event: Event) => void
+  isDisabled?: boolean
 }
 
 const props = defineProps<Props>()
@@ -11,30 +12,26 @@ const handleBeforeInput = (e: InputEvent) => {
     e.preventDefault()
   }
 }
-
-const handleInput = (e: Event) => {
-  const val = Number((e.target as HTMLInputElement).value)
-  if (!isNaN(val)) props.setValue(val)
-}
 </script>
 <template>
   <input
-    type="text"
-    inputmode="decimal"
-    pattern="[0-9]*\.?[0-9]*"
     class="input"
-    :value="props.value"
+    type="text"
+    :value="$props.num ?? ''"
+    :disabled="props.isDisabled"
     @beforeinput="handleBeforeInput"
-    @input="handleInput"
+    @input="props.onChange?.($event)"
   />
 </template>
-<style lang="css" scoped>
+<style scoped>
 .input {
-  width: calc(100% - 24px);
-  border-radius: 12px;
-  margin-bottom: 4px;
   background: linear-gradient(120deg, rgb(251, 251, 255) 0%, rgb(215, 223, 252) 100%);
-  padding: 12px 12px;
-  font-size: 16px;
+  padding: 12px 16px;
+  width: calc(100% - 32px);
+  border-radius: 16px;
+  margin-bottom: 6px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 </style>
