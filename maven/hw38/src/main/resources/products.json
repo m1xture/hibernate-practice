@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Ноутбук Apple MacBook Air",
+    "price": 45999.99
+  },
+  {
+    "id": 2,
+    "name": "Смартфон Samsung Galaxy S24",
+    "price": 29499
+  },
+  {
+    "id": 3,
+    "name": "Навушники Sony WH-1000XM5",
+    "price": 12799.5
+  },
+  {
+    "id": 4,
+    "name": "Планшет iPad Air 11\"",
+    "price": 31999
+  },
+  {
+    "id": 5,
+    "name": "Механічна клавіатура Keychron",
+    "price": 4299.9
+  }
+]
