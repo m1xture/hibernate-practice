@@ -1,15 +1,19 @@
-package com.java.app.hw40.controller;
+package com.java.app.hw37.controller;
 
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("ping")
+@RequestMapping("/ping")
+@RequiredArgsConstructor
 public class PingController {
 
-    @GetMapping
+    @GetMapping()
     public String ping() {
         return "OK";
     }
+
 }
