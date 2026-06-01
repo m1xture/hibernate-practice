@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Users</title>
+    <link rel="stylesheet" th:href="@{/css/auth.css}"/>
+    <link rel="stylesheet" th:href="@{/css/users.css}"/>
+</head>
+<body>
+
+<div class="navbar">
+    <span>Registration and Login System</span>
+    <div class="nav-links">
+        <a th:href="@{/auth/register}">Register</a>
+        <form th:action="@{/auth/logout}" method="post" style="display:inline;">
+            <button type="submit" class="nav-logout-btn">Logout</button>
+        </form>
+    </div>
+</div>
+
+<div class="users-container">
+    <h1>Registered Users</h1>
+
+    <table class="users-table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.username}"></td>
+            <td th:text="${user.phone}"></td>
+            <td th:text="${user.email}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
